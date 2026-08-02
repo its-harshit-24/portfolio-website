@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harshit Raghuwanshi — Software Developer</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Editor tab bar -->
+  <nav class="tabbar" id="tabbar">
+    <div class="tabbar__inner">
+      <div class="tabbar__brand">
+        <span class="dot dot--red"></span><span class="dot dot--amber"></span><span class="dot dot--green"></span>
+      </div>
+      <ul class="tabbar__tabs">
+        <li><a href="#about" class="tab" data-tab="about">about.tsx</a></li>
+        <li><a href="#skills" class="tab" data-tab="skills">skills.json</a></li>
+        <li><a href="#projects" class="tab" data-tab="projects">projects.md</a></li>
+        <li><a href="#contact" class="tab" data-tab="contact">contact.sh</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero: terminal -->
+  <header class="hero">
+    <div class="terminal">
+      <div class="terminal__bar">
+        <span class="dot dot--red"></span><span class="dot dot--amber"></span><span class="dot dot--green"></span>
+        <span class="terminal__title">zsh — 80x24</span>
+      </div>
+      <div class="terminal__body">
+        <p class="line"><span class="prompt">harshitraghuwanshi</span><span class="path"> ~ </span><span class="dollar">$</span> whoami</p>
+        <p class="output" id="typedName"></p>
+        <p class="line"><span class="prompt">harshitraghuwanshi</span><span class="path"> ~ </span><span class="dollar">$</span> cat role.txt</p>
+        <p class="output output--muted">Frontend-leaning Full Stack Developer · React · Node.js · Python</p>
+        <p class="line line--cursor"><span class="prompt">harshitraghuwanshi</span><span class="path"> ~ </span><span class="dollar">$</span> <span class="cursor">▌</span></p>
+      </div>
+    </div>
+    <div class="hero__scroll">scroll to explore <span class="arrow">↓</span></div>
+  </header>
+
+  <main>
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="section__label"><span class="chev">&gt;</span> about.tsx</div>
+      <div class="editor-card">
+        <pre class="code-block"><code><span class="kw">const</span> <span class="var">aboutMe</span> = {
+  <span class="key">name</span>: <span class="str">"Harshit Raghuwanshi"</span>,
+  <span class="key">based_in</span>: <span class="str">"Indore, India"</span>,
+  <span class="key">focus</span>: <span class="str">"Building clean, fast, accessible web apps"</span>,
+  <span class="key">currently</span>: <span class="str">"Open to internships & junior roles"</span>,
+  <span class="key">interests</span>: [<span class="str">"UI engineering"</span>, <span class="str">"APIs"</span>, <span class="str">"open source"</span>]
+};</code></pre>
+        <p class="about-text">I'm a developer who enjoys turning rough ideas into working products —
+        from pixel-level UI details to the API that powers them. This portfolio itself
+        is one of my projects; check the source on GitHub.</p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="section__label"><span class="chev">&gt;</span> skills.json</div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Languages</h3>
+          <ul><li>JavaScript / TypeScript</li><li>Python</li><li>HTML5 & CSS3</li><li>SQL</li></ul>
+        </div>
+        <div class="skill-card">
+          <h3>Frameworks</h3>
+          <ul><li>React</li><li>Node.js / Express</li><li>Tailwind CSS</li></ul>
+        </div>
+        <div class="skill-card">
+          <h3>Tools</h3>
+          <ul><li>Git & GitHub</li><li>VS Code</li><li>Figma</li><li>Postman</li></ul>
+        </div>
+        <div class="skill-card">
+          <h3>Learning</h3>
+          <ul><li>Next.js</li><li>Docker</li><li>System Design</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="section__label"><span class="chev">&gt;</span> projects.md</div>
+      <div class="projects-list">
+
+        <article class="project-card">
+          <div class="project-card__head">
+            <span class="project-num">01</span>
+            <h3>Expense Tracker</h3>
+            <span class="project-tag">Web App</span>
+          </div>
+          <p>A budget tracker with local persistence, category breakdowns, and a live spending chart.</p>
+          <div class="project-stack"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Chart.js</span></div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Live Demo →</a>
+            <a href="#" target="_blank" rel="noopener">Source Code →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__head">
+            <span class="project-num">02</span>
+            <h3>Project Name</h3>
+            <span class="project-tag">Web App</span>
+          </div>
+          <p>Short description of what this project does and the problem it solves.</p>
+          <div class="project-stack"><span>React</span><span>Node.js</span><span>MongoDB</span></div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Live Demo →</a>
+            <a href="#" target="_blank" rel="noopener">Source Code →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__head">
+            <span class="project-num">03</span>
+            <h3>Project Name</h3>
+            <span class="project-tag">Script / Tool</span>
+          </div>
+          <p>Short description of what this project does and the problem it solves.</p>
+          <div class="project-stack"><span>Python</span></div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Source Code →</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section--contact">
+      <div class="section__label"><span class="chev">&gt;</span> contact.sh</div>
+      <div class="contact-card">
+        <p class="line"><span class="prompt">harshitraghuwanshi</span><span class="path"> ~ </span><span class="dollar">$</span> ./contact --send</p>
+        <p class="output output--muted">Choose a channel to reach me:</p>
+        <div class="contact-links">
+          <a href="mailto:harshitraghuwanshi233@gmail.com" class="contact-btn">✉ Email</a>
+          <a href="https://github.com/its-harshit-24" target="_blank" rel="noopener" class="contact-btn">⌘ GitHub</a>
+          <a href="https://www.linkedin.com/in/harshit-raghuwanshi-a8b005276/" target="_blank" rel="noopener" class="contact-btn">in LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Built with HTML, CSS & JavaScript — no framework needed. © <span id="year"></span> Harshit Raghuwanshi</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
